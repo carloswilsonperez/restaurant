@@ -13,12 +13,30 @@ code {
     monospace;
 }
 
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+}
+
 .sideTable {
-  max-width: 400px;
-  float: right;
+  flex: 1;
+  width: 500px;
 }
 
 .categoriesNav {
-  max-width: 400px;
-  float: left;
+  flex: 1;
+  width: 400px;
+  display: flex;
 }
+
+.categoriesNav ul {
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 1.2em;
+}
+
+

@@ -34,9 +34,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Categories categories={this.state.categories} getDetails={this.getDetails}></Categories>
-        <Details category={this.state.key} details={this.state.details}></Details>
+      <div className="content">
+        <div className="categoriesNav">
+          <Categories categories={this.state.categories} getDetails={this.getDetails}></Categories>
+        </div>
+        <div className="sideTable">
+          <Details category={this.state.key} details={this.state.details}></Details>
+        </div>
       </div>
     );
   }

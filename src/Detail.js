@@ -8,8 +8,8 @@ class Details extends React.Component {
   
     render() {
       return (
-        <div className="sideTable">
-          Items in Category: ({this.props.category})
+        <React.Fragment>
+          <span className="title">Items in Category: ({this.props.category})</span>
           <table className="table table-striped">
             <thead>
               <tr>
@@ -21,7 +21,7 @@ class Details extends React.Component {
               { this.props.details.map(detail => <tr><td>{detail.name}</td><td>{detail.description}</td></tr>)}
             </tbody>
           </table>
-        </div>
+        </React.Fragment>
       );
     }
   }

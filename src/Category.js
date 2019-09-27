@@ -8,12 +8,12 @@ class Categories extends React.Component {
   
     render() {
       return (
-        <div className="categoriesNav">
-          Menu Categories
+        <React.Fragment>
+          <span className="title">Menu Categories</span>
             <ul>
                 { this.props.categories.length > 0 && this.props.categories.map(category => <li onClick={() => this.props.getDetails(category['short_name'])}>{category.name} - {category['short_name']}</li>) }
             </ul>
-        </div>
+        </React.Fragment>
       );
     }
   }
